@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%
+}
+
+.active{
+  color: #6882EB;
+
+}
+
+button{
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+button  p:hover{
+  cursor: pointer;
+}
+
+.header_spacer{
+  height:5em;
+}
+
+
+
+h1{
+  font-weight: 600;
+}
+
+
+
+.link{
+  display: inline-flex;
+  width:16%;
+}
+
+
+
+
+@media screen and (min-width:769px ) {
+
+  #header{
+    color: white;
+    background-color: black;
+    display: inline-flex;
+    width: 98%;
+    padding-left: 2%;
+    vertical-align: bottom;
+    height: 5em;
+    position: fixed;
+    left: 0;
+    top:0;
+  }
+
+  #title{
+    width: 34%;
+    outline: none;
+    font-size: 2.4em;
+    -webkit-margin-before: 0.55em;
+  }
+
+  #overlay{
+    position: fixed;
+
+    bottom: -20px;
+    height: calc(100% - 3em);
+    width: 120%;
+    z-index: -10;
+    background-image: url("../assets/temp_bg.png");
+    background-size: 100% 150%;
+  }
+
+  .button_container{
+    padding-top: 2em;
+    height:50%;
+    width: 60%;
+    bottom: 0;
+    vertical-align: bottom;
+  }
+
+  .pop_out{
+    display: none;
+  }
+
+  .phone_size{
+    display: none;
+  }
+
+  .floating_links{
+    position: fixed;
+    right: 5%;
+    bottom: 3em;
+  }
+
+  .cv_icon{
+    text-align: center;
+
+    display: inline-flex;
+
+    width: 8em;
+    height: 8em;
+
+    background-image: url("../assets/cv.png");
+    background-size: 100% 100%;
+
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+
+    animation: shake;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+    cursor: pointer;
+  }
+
+  .linked_in{
+    text-align: center;
+
+    display: inline-flex;
+
+    width: 9em;
+    height: 9em;
+
+    background-image: url("../assets/linkedin.png");
+    background-size: 100% 100%;
+
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 4s;
+
+    animation: shake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+
+    cursor: pointer;
+  }
+
+
+
+}
+
+@media screen and (max-width:768px ) {
+
+  #header{
+    color: white;
+    background-color: black;
+
+    width: 98%;
+    padding-left: 2%;
+    vertical-align: bottom;
+
+    position: fixed;
+    left: 0;
+    top:0;
+  }
+
+
+
+
+  #overlay{
+    position: fixed;
+
+    bottom: -20px;
+    height: calc(100% - 3em);
+    width: 100%;
+    z-index: -10;
+    background-image: url("../assets/temp_bg.png");
+    background-size: 100% 100%;
+
+  }
+
+
+
+  .link{
+    display: inline-flex;
+    width:16%;
+  }
+
+
+
+}
+
+@media screen and (max-width:450px ) {
+
+  .pop_out{
+    background-image: url("../assets/hamburger.png");
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0.7em;
+    top : 0.7em;
+
+  }
+
+  .pc_size{
+    display: none;
+  }
+
+  .button_container{
+    padding-top: 2em;
+    height:50%;
+    width: 100%;
+    bottom: 0;
+    vertical-align: bottom;
+  }
+
+  .link{
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .button_container{
+    position: fixed;
+    width: 80%;
+    left:10%;
+    height: 500px;
+    padding-top: 0px;
+  }
+
+  #overlay{
+    position: fixed;
+
+    bottom: -20px;
+    height: calc(100% - 1.5em);
+    width: 100%;
+    z-index: -10;
+    background-image: url("../assets/phone_bg.png");
+    background-size: 100% 100%;
+
+
+  }
+
+  #title{
+
+    font-size: 1.5em;
+
+  }
+
+
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  2.5%{
+    transform: translate3d(2px, 0, 0);
+
+  }
+  5%{
+    transform: translate3d(-2px, 0, 0);
+  }
+  7.5%{
+    transform: translate3d(2px, 0, 0);
+  }
+  10%{
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+
+  }
+}
